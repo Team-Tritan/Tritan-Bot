@@ -1,7 +1,7 @@
 <h2 align='center'>
   <img src="https://s3.wasabisys.com/team-tritan/tritan-bot/logo.webp" height='100px' width='100px' />
 <br>
-Tritan Bot </h2>
+Tritan Bot: Open Source </h2>
   <p align="center">
  Tritan Bot is a Discord Verified general purpose bot built with discord.js and express (yes, it has a dashboard included). Please read through the <a href='https://docs.tritan.gg'>docs</a> before even thinking about running this yourself. </p>
   <p align="center">

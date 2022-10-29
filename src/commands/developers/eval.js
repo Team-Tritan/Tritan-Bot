@@ -21,7 +21,7 @@ module.exports = {
     } catch (err) {
       evaled = false;
 
-      const { body } = await post("https://bin.tritan.dev/").send(err.toString());
+      const { body } = await post("https://hastebin.com/documents").send(err.toString());
       const embed = new MessageEmbed()
         .setAuthor({
           name: `${message.client.config.embeds.authorName}`,
@@ -53,7 +53,7 @@ module.exports = {
     output = inspect(output, { depth: 0, maxArrayLength: null });
     output = clean(output);
     if (output.length < 1000) {
-      const { body } = await post("https://bin.tritan.dev").send(output);
+      const { body } = await post("https://hastebin.com/documents").send(output);
       const embed = new MessageEmbed()
         .setAuthor({
           name: `${message.client.config.embeds.authorName}`,
@@ -66,7 +66,7 @@ module.exports = {
         .setFooter(`Requested by ${message.author.username}`, message.author.displayAvatarURL());
       msg.edit({ content: null, embeds: [embed] });
     } else {
-      const { body } = await post("https://bin.tritan.dev").send(output);
+      const { body } = await post("https://hastebin.com/documents").send(output);
       const embed = new MessageEmbed()
         .setAuthor({
           name: `${message.client.config.embeds.authorName}`,
